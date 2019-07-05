@@ -23,7 +23,7 @@ class Driver {
   passengers() {
     return this.trips().map(
       function(trip) {
-        return trip.passenger
+        return trip.passenger()
       }.bind(this)
     );
   }
