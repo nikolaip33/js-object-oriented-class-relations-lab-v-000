@@ -21,7 +21,11 @@ class Driver {
   }
 
   passengers() {
-    return [];
+    return this.trips.map(
+      funtion(trip) {
+        return trip.driverId === this.id
+      }.bind(this)
+    );
   }
 }
 
