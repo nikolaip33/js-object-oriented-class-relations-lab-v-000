@@ -32,7 +32,7 @@ class Passenger {
   trips() {
     return store.trips.filter(
       function(trip){
-        return trip.passenger === this.id
+        return trip.passengerId === this.id
       }.bind(this)
     );
   }
