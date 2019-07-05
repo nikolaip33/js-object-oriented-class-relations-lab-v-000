@@ -43,5 +43,11 @@ class Trip {
     );
   }
 
-
+  driver() {
+    return store.drivers.find(
+      funtion(driver) {
+        return driver.id === this.driverId
+      }.bind(this)
+    );
+  }
 }
