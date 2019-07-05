@@ -22,7 +22,7 @@ class Driver {
 
   passengers() {
     return this.trips().map(
-      funtion(trip) {
+      function(trip) {
         return trip.driverId === this.id
       }.bind(this)
     );
